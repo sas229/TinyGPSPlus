@@ -34,9 +34,9 @@ A basic example using a typical uart GPS unit running at 9600 baud might look a 
 #include <string>
 #include <iostream>
 #include <iomanip>
+#include <cstring>
 #include "pico/stdlib.h"
 #include "TinyGPSPlus.h"
-#include <cstring>
 
 // UART defines.
 #define UART0_TX_PIN    0
@@ -55,7 +55,7 @@ int main()
 {
     stdio_init_all();
     
-    // Initialise UART 0.
+    // Initialise UART0.
     uart_init(uart0, UART0_BAUD_RATE);
     gpio_set_function(UART0_TX_PIN, GPIO_FUNC_UART);
     gpio_set_function(UART0_RX_PIN, GPIO_FUNC_UART);
