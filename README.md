@@ -27,7 +27,7 @@ Finally, add TinyGPSPlus to your target link libraries:
 target_link_libraries(my_project pico_stdlib TinyGPSPlus)
 ```
 
-A basic example using a typical 4800 baud uart GPS unit might look a bit like this in C++:
+A basic example using a typical uart GPS unit running at 9600 baud might look a bit like this in C++:
 
 ```c++
 #include <stdio.h>
@@ -82,8 +82,11 @@ int main()
         } 
         // Print parsed GPS location.
         if (gps.location.isUpdated() && gps.time.isUpdated()) {
-            cout << "\nTime: " << setfill('0') << setw(2) << +gps.time.hour() << ":" << setfill('0') << setw(2) << +gps.time.minute() << ":" << setfill('0') << setw(2) << +gps.time.second();
-            cout << "; Latitude: " << gps.location.lat() << "; Longitude: " << gps.location.lng() << "\n";
+            cout << "\nTime: " << setfill('0') << setw(2) << +gps.time.hour();
+            cout << ":" << setfill('0') << setw(2) << +gps.time.minute();
+            cout << ":" << setfill('0') << setw(2) << +gps.time.second();
+            cout << "; Latitude: " << gps.location.lat();
+            cout << "; Longitude: " << gps.location.lng() << "\n";
         }
     }
 
