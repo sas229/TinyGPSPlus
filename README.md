@@ -94,4 +94,4 @@ int main()
 }
 ```
 
-For API information see: https://github.com/mikalhart/TinyGPSPlus
+For further API information see: https://github.com/mikalhart/TinyGPSPlus
