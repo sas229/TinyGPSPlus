@@ -3,13 +3,13 @@ RP2040 port for TinyGPSPlus, forked from TinyGPSPlus for Arduino by Mikal Hart. 
 
 To incorporate in your project as an interface library, simply:
 
-```
+```bash
 git clone https://github.com/sas229/TinyGPSPlus.git
 ```
 
 Or:
 
-```
+```bash
 git submodule add https://github.com/sas229/TinyGPSPlus.git
 cd TinyGPSPlus
 git submodule update
@@ -17,13 +17,13 @@ git submodule update
 
 Then add the following to your main CMakeLists.txt file:
 
-```
+```cmake
 add_subdirectory(path_to_cloned_TinyGPSPlus_directory)
 ```
 
 Finally, add TinyGPSPlus to your target link libraries:
 
-```
+```cmake
 target_link_libraries(my_project pico_stdlib TinyGPSPlus)
 ```
 
