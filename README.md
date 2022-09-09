@@ -29,7 +29,7 @@ target_link_libraries(my_project pico_stdlib TinyGPSPlus)
 
 A basic example using a typical uart GPS unit running at 9600 baud might look a bit like this in C++:
 
-```c++
+```cpp
 #include <stdio.h>
 #include <string>
 #include <iostream>
