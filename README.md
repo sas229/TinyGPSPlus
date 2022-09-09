@@ -1,5 +1,5 @@
 # TinyGPSPlus
-RP2040 port for TinyGPSPlus, forked from TinyGPSPlus for Arduino by Mikal Hart. Relies on the pico stdlib for replacement of Arduino millis() function with other Arduino specific functions replaced by stdlib alternatives. 
+RP2040 port for TinyGPSPlus, forked from TinyGPSPlus for Arduino by Mikal Hart. Relies on the pico/stdlib for replacement of Arduino millis() function with other Arduino specific functions replaced by stdlib alternatives. 
 
 To incorporate in your project as an interface library, simply:
 
