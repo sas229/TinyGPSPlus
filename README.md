@@ -7,7 +7,7 @@ To incorporate in your project as an interface library, simply:
 git clone https://github.com/sas229/TinyGPSPlus.git
 ```
 
-Or:
+Or alternatively:
 
 ```bash
 git submodule add https://github.com/sas229/TinyGPSPlus.git
