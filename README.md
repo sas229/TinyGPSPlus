@@ -15,7 +15,7 @@ cd TinyGPSPlus
 git submodule update
 ```
 
-Then add the following to your main CMakeLists.txt file:
+Then add the following to your projects CMakeLists.txt file:
 
 ```cmake
 add_subdirectory(path_to_cloned_TinyGPSPlus_directory)
